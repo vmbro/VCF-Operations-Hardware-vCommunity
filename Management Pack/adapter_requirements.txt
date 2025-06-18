@@ -1,0 +1,2 @@
+vmware-aria-operations-integration-sdk-lib~=1.0.0
+ping3==4.0.8
