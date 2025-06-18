@@ -1,0 +1,5 @@
+## EULA - Hardware vCommunity Management Pack ##
+
+Hardware vCommunity is an open-source management pack for physical servers. Feel free to use and explore it in your environment! Dive in, experiment, and have fun with it—your feedback helps us improve. Currently it's only supports Dell Poweredge Servers. Other server vendors is under consideration.
+
+Enjoy! (:
