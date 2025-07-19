@@ -17,7 +17,10 @@ Management Pack supports Configuration Files that can have multiple FQDN/IP addr
 ```
 
 Example Overview of the Hardware vCommunity Adapter
-![image](https://github.com/user-attachments/assets/4d8d1841-5a04-42ed-9b14-083a97ddf3d2)
+
+<img width="1620" height="919" alt="Screenshot 2025-06-19 at 00 06 23" src="https://github.com/user-attachments/assets/92ada679-1c85-426c-a500-7b8b0f4bd6f0" />
+
+
 
 
 ## Requirements:
