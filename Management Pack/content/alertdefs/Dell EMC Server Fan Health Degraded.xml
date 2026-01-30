@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><alertContent>
+    <AlertDefinitions>
+        <AlertDefinition adapterKind="HardwarevCommunity" description="Dell EMC Server Fan Health Degraded" disableInBasePolicy="true" id="AlertDefinition-6b439e00-d3c2-4b03-a97c-081e1d2af84b" name="Dell EMC Server Fan Health Degraded" resourceKind="PhysicalServer" subType="19" type="15">
+            <State severity="automatic">
+                <SymptomSet applyOn="self" operator="and">
+                    <Symptom ref="SymptomDefinition-8c4401b7-a565-4c3c-a113-65a595c31808"/>
+                    <Symptom ref="SymptomDefinition-6382d2f5-4819-4d98-95e5-cf94bc2e962d"/>
+                </SymptomSet>
+                <Impact key="health" type="badge"/>
+            </State>
+        </AlertDefinition>
+    </AlertDefinitions>
+    <SymptomDefinitions>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-6382d2f5-4819-4d98-95e5-cf94bc2e962d" name="Dell EMC Server Fan Health Warning" resourceKind="PhysicalServer">
+            <State severity="warning">
+                <Condition instanced="true" key="Hardware|Cooler|Fans:Fan 1A|Fan Health" operator="=" thresholdType="static" type="property" value="Warning" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-8c4401b7-a565-4c3c-a113-65a595c31808" name="Dell EMC Server Fan Health Degraded" resourceKind="PhysicalServer">
+            <State severity="critical">
+                <Condition instanced="true" key="Hardware|Cooler|Fans:Fan 1A|Fan Health" operator="=" thresholdType="static" type="property" value="Degraded" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+    </SymptomDefinitions>
+</alertContent>

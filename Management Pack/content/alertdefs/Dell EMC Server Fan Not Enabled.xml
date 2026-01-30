@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><alertContent>
+    <AlertDefinitions>
+        <AlertDefinition adapterKind="HardwarevCommunity" description="Dell EMC Server Fan Not Enabled" disableInBasePolicy="true" id="AlertDefinition-388d0e48-2d87-42a8-83bc-c8b7126994af" name="Dell EMC Server Fan Not Enabled" resourceKind="PhysicalServer" subType="19" type="15">
+            <State severity="automatic">
+                <SymptomSet applyOn="self" operator="and" ref="SymptomDefinition-b2a8d320-4f43-45ed-b804-a9896e863ee7"/>
+                <Impact key="health" type="badge"/>
+            </State>
+        </AlertDefinition>
+    </AlertDefinitions>
+    <SymptomDefinitions>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-b2a8d320-4f43-45ed-b804-a9896e863ee7" name="Dell EMC Server Fan Not Enabled" resourceKind="PhysicalServer">
+            <State severity="critical">
+                <Condition instanced="true" key="Hardware|Cooler|Fans:Fan 1A|State" operator="!=" thresholdType="static" type="property" value="Enabled" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+    </SymptomDefinitions>
+</alertContent>

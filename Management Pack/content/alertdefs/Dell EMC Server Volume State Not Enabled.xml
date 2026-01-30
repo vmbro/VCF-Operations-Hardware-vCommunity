@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><alertContent>
+    <AlertDefinitions>
+        <AlertDefinition adapterKind="HardwarevCommunity" description="Dell EMC Server Volume State Not Enabled" disableInBasePolicy="true" id="AlertDefinition-384fe42c-db92-4a5b-ba1d-7f81fec777d0" name="Dell EMC Server Volume State Not Enabled" resourceKind="PhysicalServer" subType="19" type="15">
+            <State severity="automatic">
+                <SymptomSet applyOn="self" operator="and" ref="SymptomDefinition-50144b96-23b2-4987-bbc6-f2f4b0631d5f"/>
+                <Impact key="health" type="badge"/>
+            </State>
+        </AlertDefinition>
+    </AlertDefinitions>
+    <SymptomDefinitions>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-50144b96-23b2-4987-bbc6-f2f4b0631d5f" name="Dell EMC Server Volume Not Enabled" resourceKind="PhysicalServer">
+            <State severity="critical">
+                <Condition instanced="true" key="Hardware|Controller|Volumes:VD0|Volume State" operator="!=" thresholdType="static" type="property" value="Enabled" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+    </SymptomDefinitions>
+</alertContent>

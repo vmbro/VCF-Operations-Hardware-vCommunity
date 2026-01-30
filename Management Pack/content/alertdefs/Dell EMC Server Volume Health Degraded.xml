@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><alertContent>
+    <AlertDefinitions>
+        <AlertDefinition adapterKind="HardwarevCommunity" description="Dell EMC Server Volume Health Degraded" disableInBasePolicy="true" id="AlertDefinition-120ff89c-4b9b-485e-aeb1-1502eb6b6df6" name="Dell EMC Server Volume Health Degraded" resourceKind="PhysicalServer" subType="19" type="15">
+            <State severity="automatic">
+                <SymptomSet applyOn="self" operator="and">
+                    <Symptom ref="SymptomDefinition-08e01b14-633b-4729-82b1-32432641831a"/>
+                    <Symptom ref="SymptomDefinition-8cd57787-fe56-4334-9393-a91f82271f99"/>
+                </SymptomSet>
+                <Impact key="health" type="badge"/>
+            </State>
+        </AlertDefinition>
+    </AlertDefinitions>
+    <SymptomDefinitions>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-8cd57787-fe56-4334-9393-a91f82271f99" name="Dell EMC Server Volume Health Warning" resourceKind="PhysicalServer">
+            <State severity="warning">
+                <Condition instanced="true" key="Hardware|Controller|Volumes:VD0|Volume Health" operator="=" thresholdType="static" type="property" value="Warning" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-08e01b14-633b-4729-82b1-32432641831a" name="Dell EMC Server Volume Health Degraded" resourceKind="PhysicalServer">
+            <State severity="critical">
+                <Condition instanced="true" key="Hardware|Controller|Volumes:VD0|Volume Health" operator="=" thresholdType="static" type="property" value="Degraded" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+    </SymptomDefinitions>
+</alertContent>

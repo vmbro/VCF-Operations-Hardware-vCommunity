@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><alertContent>
+    <AlertDefinitions>
+        <AlertDefinition adapterKind="HardwarevCommunity" cancelCycle="2" description="Dell EMC Server Down" disableInBasePolicy="true" id="AlertDefinition-39c0600b-1730-48fc-9750-83ac1c7047c6" name="Dell EMC Server Down" resourceKind="PhysicalServer" subType="19" type="15" waitCycle="2">
+            <State severity="automatic">
+                <SymptomSet applyOn="self" operator="and" ref="SymptomDefinition-79cac66a-3724-4249-b6af-7ee173588730"/>
+                <Impact key="health" type="badge"/>
+            </State>
+        </AlertDefinition>
+    </AlertDefinitions>
+    <SymptomDefinitions>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-79cac66a-3724-4249-b6af-7ee173588730" name="Condition_63472aea-fbc3-4c0c-b9f8-c327c2032bd7" resourceKind="PhysicalServer" symptomDefType="condition_self">
+            <State severity="critical">
+                <Condition key="Availability|Ping|Status" operator="=" thresholdType="static" type="metric" value="0.0" valueType="numeric"/>
+            </State>
+        </SymptomDefinition>
+    </SymptomDefinitions>
+</alertContent>

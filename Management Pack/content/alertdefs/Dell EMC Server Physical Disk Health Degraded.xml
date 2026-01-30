@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><alertContent>
+    <AlertDefinitions>
+        <AlertDefinition adapterKind="HardwarevCommunity" description="Dell EMC Server Physical Disk Health Degraded" disableInBasePolicy="true" id="AlertDefinition-112a0afd-3430-42a0-8252-7361d4f2bf87" name="Dell EMC Server Physical Disk Health Degraded" resourceKind="PhysicalServer" subType="19" type="15">
+            <State severity="automatic">
+                <SymptomSet applyOn="self" operator="and">
+                    <Symptom ref="SymptomDefinition-b37d370f-d719-436c-b210-73b1c19cc7f4"/>
+                    <Symptom ref="SymptomDefinition-8bce89e0-c38a-4f79-8142-edec559117d4"/>
+                </SymptomSet>
+                <Impact key="health" type="badge"/>
+            </State>
+        </AlertDefinition>
+    </AlertDefinitions>
+    <SymptomDefinitions>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-8bce89e0-c38a-4f79-8142-edec559117d4" name="Dell EMC Server Physical Disk Health Warning" resourceKind="PhysicalServer">
+            <State severity="warning">
+                <Condition instanced="true" key="Hardware|Controller|Physical Disks:NVMe 0|Drive Health" operator="=" thresholdType="static" type="property" value="Warning" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-b37d370f-d719-436c-b210-73b1c19cc7f4" name="Dell EMC Server Physical Disk Health Degraded" resourceKind="PhysicalServer">
+            <State severity="critical">
+                <Condition instanced="true" key="Hardware|Controller|Physical Disks:NVMe 0|Drive Health" operator="=" thresholdType="static" type="property" value="Degraded" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+    </SymptomDefinitions>
+</alertContent>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><alertContent>
+    <AlertDefinitions>
+        <AlertDefinition adapterKind="HardwarevCommunity" description="Dell EMC Server Physical Disk Life Remaining Decreased" disableInBasePolicy="true" id="AlertDefinition-56d91bba-bc69-4a28-a765-26cd8e5ab473" name="Dell EMC Server Physical Disk Life Remaining Decreased" resourceKind="PhysicalServer" subType="19" type="15">
+            <State severity="automatic">
+                <SymptomSets operator="and">
+                    <SymptomSet applyOn="self" operator="and" ref="SymptomDefinition-dbdc066a-c178-4d0f-8788-aaabfb9627fd"/>
+                    <SymptomSet applyOn="self" operator="and" ref="SymptomDefinition-3cbaf034-b3cb-4be1-94f3-2b1947fca70e"/>
+                    <SymptomSet applyOn="self" operator="and" ref="SymptomDefinition-202afcd3-96dd-4a40-a6e4-aebff689083e"/>
+                    <SymptomSet applyOn="self" operator="and" ref="SymptomDefinition-5b4b2d74-3278-44b0-b5d2-70a98543249d"/>
+                </SymptomSets>
+                <Impact key="health" type="badge"/>
+            </State>
+        </AlertDefinition>
+    </AlertDefinitions>
+    <SymptomDefinitions>
+        <SymptomDefinition adapterKind="HardwarevCommunity" cancelCycle="3" disableInBasePolicy="true" id="SymptomDefinition-202afcd3-96dd-4a40-a6e4-aebff689083e" name="Dell EMC Server Physical Disk Life Remaining - Warning" resourceKind="PhysicalServer" waitCycle="3">
+            <State severity="warning">
+                <Condition instanced="true" key="Hardware|Controller|Physical Disks:NVMe 0|Predicted Media Life Left Percent" operator="&lt;" thresholdType="static" type="metric" value="30.0" valueType="numeric"/>
+            </State>
+        </SymptomDefinition>
+        <SymptomDefinition adapterKind="HardwarevCommunity" cancelCycle="3" disableInBasePolicy="true" id="SymptomDefinition-3cbaf034-b3cb-4be1-94f3-2b1947fca70e" name="Dell EMC Server Physical Disk Life Remaining - Immediate" resourceKind="PhysicalServer" waitCycle="3">
+            <State severity="immediate">
+                <Condition instanced="true" key="Hardware|Controller|Physical Disks:NVMe 0|Predicted Media Life Left Percent" operator="&lt;" thresholdType="static" type="metric" value="20.0" valueType="numeric"/>
+            </State>
+        </SymptomDefinition>
+        <SymptomDefinition adapterKind="HardwarevCommunity" cancelCycle="3" disableInBasePolicy="true" id="SymptomDefinition-dbdc066a-c178-4d0f-8788-aaabfb9627fd" name="Dell EMC Server Physical Disk Life Remaining - Critical" resourceKind="PhysicalServer" waitCycle="3">
+            <State severity="critical">
+                <Condition instanced="true" key="Hardware|Controller|Physical Disks:NVMe 0|Predicted Media Life Left Percent" operator="&lt;" thresholdType="static" type="metric" value="10.0" valueType="numeric"/>
+            </State>
+        </SymptomDefinition>
+        <SymptomDefinition adapterKind="HardwarevCommunity" cancelCycle="3" disableInBasePolicy="true" id="SymptomDefinition-5b4b2d74-3278-44b0-b5d2-70a98543249d" name="Dell EMC Server Physical Disk Life Remaining - Informational" resourceKind="PhysicalServer" waitCycle="3">
+            <State severity="info">
+                <Condition instanced="true" key="Hardware|Controller|Physical Disks:NVMe 0|Predicted Media Life Left Percent" operator="&lt;" thresholdType="static" type="metric" value="40.0" valueType="numeric"/>
+            </State>
+        </SymptomDefinition>
+    </SymptomDefinitions>
+</alertContent>

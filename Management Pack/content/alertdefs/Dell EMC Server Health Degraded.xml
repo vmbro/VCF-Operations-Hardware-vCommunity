@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><alertContent>
+    <AlertDefinitions>
+        <AlertDefinition adapterKind="HardwarevCommunity" description="Dell EMC Server Health Degraded" disableInBasePolicy="true" id="AlertDefinition-af413d98-d8f8-49ac-aee9-31786cad4728" name="Dell EMC Server Health Degraded" resourceKind="PhysicalServer" subType="19" type="15">
+            <State severity="automatic">
+                <SymptomSet applyOn="self" operator="or">
+                    <Symptom ref="SymptomDefinition-956eb207-e8ed-4173-a02f-d3df527b6eaf"/>
+                    <Symptom ref="SymptomDefinition-ee51fd24-0fe3-4df7-850f-a62976f0a9ec"/>
+                    <Symptom ref="SymptomDefinition-20fbcac0-81ca-4ba4-afe3-3bbe2096b5e0"/>
+                    <Symptom ref="SymptomDefinition-d0de78ef-b448-4f74-9e92-465d79f49765"/>
+                    <Symptom ref="SymptomDefinition-844ce8a4-9e1d-4fa6-b37b-208dda8b56df"/>
+                    <Symptom ref="SymptomDefinition-b47ce705-436a-45e8-952f-57f55c1a8f07"/>
+                    <Symptom ref="SymptomDefinition-bd84177b-73d5-4742-a983-04e4467930a2"/>
+                    <Symptom ref="SymptomDefinition-6c33565f-c2e8-4b07-8557-f119ca69a92e"/>
+                    <Symptom ref="SymptomDefinition-3d04ae7a-6cf7-4b55-849c-76899ce01384"/>
+                    <Symptom ref="SymptomDefinition-e1e5dbb3-5ce3-46fd-bcb8-1a8f3773a2a1"/>
+                </SymptomSet>
+                <Impact key="health" type="badge"/>
+            </State>
+        </AlertDefinition>
+    </AlertDefinitions>
+    <SymptomDefinitions>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-e1e5dbb3-5ce3-46fd-bcb8-1a8f3773a2a1" name="Condition_5a7a4688-ddd6-41cf-af65-144c57b4c956" resourceKind="PhysicalServer" symptomDefType="condition_self">
+            <State severity="critical">
+                <Condition key="Hardware|Health|Volt" operator="=" thresholdType="static" type="property" value="Degraded" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-956eb207-e8ed-4173-a02f-d3df527b6eaf" name="Condition_76e07945-a0f0-49f3-a6fa-63ada042b01a" resourceKind="PhysicalServer" symptomDefType="condition_self">
+            <State severity="critical">
+                <Condition key="Hardware|Health|Battery" operator="=" thresholdType="static" type="property" value="Degraded" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-3d04ae7a-6cf7-4b55-849c-76899ce01384" name="Condition_a31a80cc-eb05-45fd-a2c7-096a760aaea5" resourceKind="PhysicalServer" symptomDefType="condition_self">
+            <State severity="critical">
+                <Condition key="Hardware|Health|Temperature" operator="=" thresholdType="static" type="property" value="Degraded" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-6c33565f-c2e8-4b07-8557-f119ca69a92e" name="Condition_79542945-d20d-4b99-9f34-e492b2ebd904" resourceKind="PhysicalServer" symptomDefType="condition_self">
+            <State severity="critical">
+                <Condition key="Hardware|Health|System" operator="=" thresholdType="static" type="property" value="Degraded" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-20fbcac0-81ca-4ba4-afe3-3bbe2096b5e0" name="Condition_621d78aa-bfbb-4442-b4f1-3df8c17de450" resourceKind="PhysicalServer" symptomDefType="condition_self">
+            <State severity="critical">
+                <Condition key="Hardware|Health|CPU Health" operator="=" thresholdType="static" type="property" value="Degraded" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-d0de78ef-b448-4f74-9e92-465d79f49765" name="Condition_02e298cc-2055-4c8d-94ae-72a461d14bd8" resourceKind="PhysicalServer" symptomDefType="condition_self">
+            <State severity="critical">
+                <Condition key="Hardware|Health|Memory Health" operator="=" thresholdType="static" type="property" value="Degraded" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-ee51fd24-0fe3-4df7-850f-a62976f0a9ec" name="Condition_e874b673-d1c0-4108-bb73-90b73b8a62ca" resourceKind="PhysicalServer" symptomDefType="condition_self">
+            <State severity="critical">
+                <Condition key="Hardware|Health|Cooling" operator="=" thresholdType="static" type="property" value="Degraded" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-844ce8a4-9e1d-4fa6-b37b-208dda8b56df" name="Condition_a61b1392-5e24-4ac8-b7dc-8ac6dead9ccb" resourceKind="PhysicalServer" symptomDefType="condition_self">
+            <State severity="critical">
+                <Condition key="Hardware|Health|Power Supply" operator="=" thresholdType="static" type="property" value="Degraded" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-b47ce705-436a-45e8-952f-57f55c1a8f07" name="Condition_87835405-2c6c-437a-98f2-c65e12e3d289" resourceKind="PhysicalServer" symptomDefType="condition_self">
+            <State severity="critical">
+                <Condition key="Hardware|Health|SEL" operator="=" thresholdType="static" type="property" value="Degraded" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-bd84177b-73d5-4742-a983-04e4467930a2" name="Condition_9eddb681-8b70-4a14-a45d-17be762d9f85" resourceKind="PhysicalServer" symptomDefType="condition_self">
+            <State severity="critical">
+                <Condition key="Hardware|Health|Storage" operator="=" thresholdType="static" type="property" value="Degraded" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+    </SymptomDefinitions>
+</alertContent>

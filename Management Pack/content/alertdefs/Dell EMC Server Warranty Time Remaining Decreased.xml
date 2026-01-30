@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><alertContent>
+    <AlertDefinitions>
+        <AlertDefinition adapterKind="HardwarevCommunity" description="Dell EMC Server Warranty Time Remaining Decreased" disableInBasePolicy="true" id="AlertDefinition-f7c70b70-f2c9-44c4-9ad8-6ce9818a5767" name="Dell EMC Server Warranty Time Remaining Decreased" resourceKind="PhysicalServer" subType="19" type="15">
+            <State severity="automatic">
+                <SymptomSets operator="or">
+                    <SymptomSet applyOn="self" operator="and">
+                        <Symptom ref="SymptomDefinition-b69a9a9b-c049-423a-a8c9-58be37816c75"/>
+                        <Symptom ref="SymptomDefinition-5a4d1df9-f327-4f86-b3d0-f61baf061a77"/>
+                    </SymptomSet>
+                    <SymptomSet applyOn="self" operator="and">
+                        <Symptom ref="SymptomDefinition-470d21f0-7771-40cc-8355-09b547ea62d8"/>
+                        <Symptom ref="SymptomDefinition-4ee8c9b4-8d6f-438c-b5ad-3d88f82ea532"/>
+                    </SymptomSet>
+                    <SymptomSet applyOn="self" operator="and" ref="SymptomDefinition-4df2c7e6-8c0a-4d4e-a73e-e8504f3bbd1f"/>
+                </SymptomSets>
+                <Impact key="health" type="badge"/>
+            </State>
+        </AlertDefinition>
+    </AlertDefinitions>
+    <SymptomDefinitions>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-4df2c7e6-8c0a-4d4e-a73e-e8504f3bbd1f" name="Condition_1d4515e1-12a4-4673-8451-50039092c4b2" resourceKind="PhysicalServer" symptomDefType="condition_self">
+            <State severity="critical">
+                <Condition key="Summary|Warranty|Days Left" operator="&lt;=" thresholdType="static" type="metric" value="60.0" valueType="numeric"/>
+            </State>
+        </SymptomDefinition>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-5a4d1df9-f327-4f86-b3d0-f61baf061a77" name="Condition_b16b59fb-a801-4349-a2a2-30606c19c87c" resourceKind="PhysicalServer" symptomDefType="condition_self">
+            <State severity="warning">
+                <Condition key="Summary|Warranty|Days Left" operator="&gt;" thresholdType="static" type="metric" value="90.0" valueType="numeric"/>
+            </State>
+        </SymptomDefinition>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-470d21f0-7771-40cc-8355-09b547ea62d8" name="Condition_00d259b8-d394-463d-b889-0e6f2abe4d56" resourceKind="PhysicalServer" symptomDefType="condition_self">
+            <State severity="immediate">
+                <Condition key="Summary|Warranty|Days Left" operator="&gt;" thresholdType="static" type="metric" value="60.0" valueType="numeric"/>
+            </State>
+        </SymptomDefinition>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-b69a9a9b-c049-423a-a8c9-58be37816c75" name="Condition_bbce5c0d-cff7-4ff7-be74-28766d0eba2e" resourceKind="PhysicalServer" symptomDefType="condition_self">
+            <State severity="warning">
+                <Condition key="Summary|Warranty|Days Left" operator="&lt;=" thresholdType="static" type="metric" value="120.0" valueType="numeric"/>
+            </State>
+        </SymptomDefinition>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-4ee8c9b4-8d6f-438c-b5ad-3d88f82ea532" name="Condition_093d9bd9-0751-4e6b-a8aa-1ca855b3b43f" resourceKind="PhysicalServer" symptomDefType="condition_self">
+            <State severity="immediate">
+                <Condition key="Summary|Warranty|Days Left" operator="&lt;=" thresholdType="static" type="metric" value="90.0" valueType="numeric"/>
+            </State>
+        </SymptomDefinition>
+    </SymptomDefinitions>
+</alertContent>
