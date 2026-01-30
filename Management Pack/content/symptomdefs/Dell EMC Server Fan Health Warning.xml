@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><alertContent>
+    <SymptomDefinitions>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-6382d2f5-4819-4d98-95e5-cf94bc2e962d" name="Dell EMC Server Fan Health Warning" resourceKind="PhysicalServer">
+            <State severity="warning">
+                <Condition instanced="true" key="Hardware|Cooler|Fans:Fan 1A|Fan Health" operator="=" thresholdType="static" type="property" value="Warning" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+    </SymptomDefinitions>
+</alertContent>

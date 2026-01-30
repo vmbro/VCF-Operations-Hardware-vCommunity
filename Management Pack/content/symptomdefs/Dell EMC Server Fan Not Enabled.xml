@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><alertContent>
+    <SymptomDefinitions>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-b2a8d320-4f43-45ed-b804-a9896e863ee7" name="Dell EMC Server Fan Not Enabled" resourceKind="PhysicalServer">
+            <State severity="critical">
+                <Condition instanced="true" key="Hardware|Cooler|Fans:Fan 1A|State" operator="!=" thresholdType="static" type="property" value="Enabled" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+    </SymptomDefinitions>
+</alertContent>

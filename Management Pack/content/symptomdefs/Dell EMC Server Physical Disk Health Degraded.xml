@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><alertContent>
+    <SymptomDefinitions>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-b37d370f-d719-436c-b210-73b1c19cc7f4" name="Dell EMC Server Physical Disk Health Degraded" resourceKind="PhysicalServer">
+            <State severity="critical">
+                <Condition instanced="true" key="Hardware|Controller|Physical Disks:NVMe 0|Drive Health" operator="=" thresholdType="static" type="property" value="Degraded" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+    </SymptomDefinitions>
+</alertContent>

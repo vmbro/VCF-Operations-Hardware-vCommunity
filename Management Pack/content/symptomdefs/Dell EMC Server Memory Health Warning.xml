@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><alertContent>
+    <SymptomDefinitions>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-2f13de24-ce16-4c30-90ad-ad196095ec5d" name="Dell EMC Server Memory Health Warning" resourceKind="PhysicalServer">
+            <State severity="warning">
+                <Condition instanced="true" key="Hardware|Memory:DIMM A1|Memory Health" operator="=" thresholdType="static" type="property" value="Warning" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+    </SymptomDefinitions>
+</alertContent>

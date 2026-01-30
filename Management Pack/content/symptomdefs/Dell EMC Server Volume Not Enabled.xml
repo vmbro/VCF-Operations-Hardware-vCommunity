@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><alertContent>
+    <SymptomDefinitions>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-50144b96-23b2-4987-bbc6-f2f4b0631d5f" name="Dell EMC Server Volume Not Enabled" resourceKind="PhysicalServer">
+            <State severity="critical">
+                <Condition instanced="true" key="Hardware|Controller|Volumes:VD0|Volume State" operator="!=" thresholdType="static" type="property" value="Enabled" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+    </SymptomDefinitions>
+</alertContent>

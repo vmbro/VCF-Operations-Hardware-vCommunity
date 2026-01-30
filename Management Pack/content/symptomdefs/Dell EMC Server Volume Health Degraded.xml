@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><alertContent>
+    <SymptomDefinitions>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-08e01b14-633b-4729-82b1-32432641831a" name="Dell EMC Server Volume Health Degraded" resourceKind="PhysicalServer">
+            <State severity="critical">
+                <Condition instanced="true" key="Hardware|Controller|Volumes:VD0|Volume Health" operator="=" thresholdType="static" type="property" value="Degraded" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+    </SymptomDefinitions>
+</alertContent>

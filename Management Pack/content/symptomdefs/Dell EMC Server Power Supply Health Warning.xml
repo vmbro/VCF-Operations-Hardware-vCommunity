@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><alertContent>
+    <SymptomDefinitions>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-2ba146e3-38cf-44c5-be23-0120a24fbdee" name="Dell EMC Server Power Supply Health Warning" resourceKind="PhysicalServer">
+            <State severity="warning">
+                <Condition instanced="true" key="Hardware|Power:PS1|PS Health" operator="=" thresholdType="static" type="property" value="Warning" valueType="string"/>
+            </State>
+        </SymptomDefinition>
+    </SymptomDefinitions>
+</alertContent>

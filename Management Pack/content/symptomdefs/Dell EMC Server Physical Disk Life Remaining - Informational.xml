@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><alertContent>
+    <SymptomDefinitions>
+        <SymptomDefinition adapterKind="HardwarevCommunity" cancelCycle="3" disableInBasePolicy="true" id="SymptomDefinition-5b4b2d74-3278-44b0-b5d2-70a98543249d" name="Dell EMC Server Physical Disk Life Remaining - Informational" resourceKind="PhysicalServer" waitCycle="3">
+            <State severity="info">
+                <Condition instanced="true" key="Hardware|Controller|Physical Disks:NVMe 0|Predicted Media Life Left Percent" operator="&lt;" thresholdType="static" type="metric" value="40.0" valueType="numeric"/>
+            </State>
+        </SymptomDefinition>
+    </SymptomDefinitions>
+</alertContent>
