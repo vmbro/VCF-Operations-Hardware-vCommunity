@@ -1,0 +1,52 @@
+{
+   "customGroups": [{
+      "resourceKind": "Environment",
+      "membershipDefinition": {"ruleGroups": [{
+         "resourceKind": "PhysicalServer",
+         "adapterKind": "HardwarevCommunity",
+         "rules": []
+      }]},
+      "adapterKind": "Container",
+      "autoResolveMembership": true,
+      "name": "Dell EMC Servers",
+      "description": "",
+      "started": true
+   }],
+   "customGroupTypes": [{
+      "resourceKind": "Environment",
+      "localization": [
+         {
+            "resourceKindName": "Umgebung",
+            "locale": "de"
+         },
+         {
+            "resourceKindName": "環境",
+            "locale": "zh_TW"
+         },
+         {
+            "resourceKindName": "환경",
+            "locale": "ko"
+         },
+         {
+            "resourceKindName": "環境",
+            "locale": "ja"
+         },
+         {
+            "resourceKindName": "Environment",
+            "locale": "en"
+         },
+         {
+            "resourceKindName": "环境",
+            "locale": "zh_CN"
+         },
+         {
+            "resourceKindName": "Environnement",
+            "locale": "fr"
+         },
+         {
+            "resourceKindName": "Entorno",
+            "locale": "es"
+         }
+      ]
+   }]
+}
