@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><alertContent>
+    <SymptomDefinitions>
+        <SymptomDefinition adapterKind="HardwarevCommunity" disableInBasePolicy="true" id="SymptomDefinition-18634a03-1fd7-435c-a411-592e2bdc06b2" name="Dell EMC Server Notification Event" resourceKind="PhysicalServer">
+            <State severity="critical">
+                <Condition eventMsg="(?is).*Dell EMC Server.*" eventSubType="5" eventType="11" operator="regex" type="msg_event"/>
+            </State>
+        </SymptomDefinition>
+    </SymptomDefinitions>
+</alertContent>
