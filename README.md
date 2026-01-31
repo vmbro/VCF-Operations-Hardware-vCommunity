@@ -11,28 +11,15 @@ Hardware vCommunity is an open-source project that uses the Dell EMC iDRAC Redfi
 * Adapter Memory Limit (MB) - maximum amount of memory the adapter instance will use
 
 
-Management Pack supports Configuration Files that can have multiple FQDN/IP addresses and it automatically discovers these servers then creating new objects.
+The Hardware vCommnuity Management Pack supports Configuration Files that can have multiple FQDN/IP addresses which automatically discover these servers.  You should create a configuration file for each Adapter Instance in this format.
 
-```
-<?xml version="1.0" encoding="UTF-8"?>
-<AdapterKinds>
- your-dell-server01.domain.local,
- your-dell-server02.domain.local,
- your-dell-server03.domain.local,
- your-dell-server04.domain.local,
- your-dell-server05.domain.local
-</AdapterKinds>
-```
-
-Example Overview of the Hardware vCommunity Adapter
-
-<img width="1620" height="919" alt="Screenshot 2025-06-19 at 00 06 23" src="https://github.com/user-attachments/assets/92ada679-1c85-426c-a500-7b8b0f4bd6f0" />
-
-
-
+<IPs>
+ fqdn_or_ip_goes_here,
+ fqdn_or_ip_goes here
+</IPs>
 
 ## Requirements:
 
-* Credential to login iDRAC servers to query component informations
+* Dell EMC iDRAC Credential to login and query component informations
 * A configuration file that contains list of FQDN/IP addresses for integration (Configuration file name must be the same in the adapter configuration)
-* Datacenter name that you want to group the given server list
+* Collection via Cloud Proxy
