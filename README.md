@@ -1,3 +1,10 @@
+[![Blog](https://img.shields.io/badge/Hardware%20vCommunity%20Management%20Pack-157BAD)]([https://github.com/vmbro/VCF-Operations-vCommunity-Content](https://github.com/vmbro/VCF-Operations-vCommunity-Content))
+[![MP Version](https://img.shields.io/github/v/release/vmbro/VCF-Operations-Hardware-vCommunity)](https://badge.fury.io/gh/vmbro%2Fvcf-operations-hardware-vcommunity)
+[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/vmbro/VCF-Operations-Hardware-vCommunity/total)]([https://github.com/vmbro/VCF-Operations-Hardware-vCommunity-Content](https://github.com/vmbro/VCF-Operations-Hardware-vCommunity-Content))
+![GitHub repo size](https://img.shields.io/github/repo-size/vmbro/VCF-Operations-Hardware-vCommunity)
+![GitHub Repo stars](https://img.shields.io/github/stars/vmbro/VCF-Operations-Hardware-vCommunity?style=flat)
+
+
 # VCF Operations Hardware vCommunity
 Hardware vCommunity is an open-source project that uses the Dell EMC iDRAC Redfish API to capture Dell EMC Server Metrics, Properties, and Events.  Each Adapter Instance will require the following:
 * Physical Server Config File - list of Dell EMC iDRAC FQDN/IPs, one per adapter instance
