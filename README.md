@@ -21,11 +21,12 @@ Hardware vCommunity is an open-source project that uses the Dell EMC iDRAC Redfi
 The Hardware vCommnuity Management Pack supports Configuration Files that can have multiple FQDN/IP addresses which automatically discover these servers.  You should create a configuration file for each Adapter Instance in this format.
 
 ```xml
-<IPS>
- fqdn1,
- fqdn2,
- fqdn3
-</IPS>
+<IPs>
+ dell-idrac-server01.domain.local,
+ dell-idrac-server02.domain.local,
+ dell-idrac-server03.domain.local,
+ dell-idrac-server04.domain.local
+</IPs>
 ```
 
 
