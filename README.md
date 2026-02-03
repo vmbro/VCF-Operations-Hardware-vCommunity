@@ -35,3 +35,4 @@ The Hardware vCommnuity Management Pack supports Configuration Files that can ha
 * Dell EMC iDRAC Credential to login and query component informations
 * A configuration file that contains list of FQDN/IP addresses for integration (Configuration file name must be the same in the adapter configuration)
 * Collection via Cloud Proxy
+* Once installed assign the Custom Group "Dell EMC Servers" to the Policy "vCommunity Hardware Policy" to enable all Alerts
