@@ -1,0 +1,220 @@
+{
+   "entries": {"resource": [{
+      "resourceKindKey": "Environment",
+      "internalId": "resource:id:0_::_",
+      "adapterKindKey": "Container",
+      "identifiers": [],
+      "name": "Dell EMC Servers"
+   }]},
+   "dashboards": [{
+      "shared": false,
+      "temporary": false,
+      "hidden": false,
+      "creationTime": 1770143015118,
+      "autoswitchEnabled": false,
+      "importAttempts": 0,
+      "columnProportion": "1-1",
+      "importComplete": true,
+      "description": "",
+      "widgets": [
+         {
+            "collapsed": false,
+            "id": "dddaa688-7dc9-422f-a8a6-28fe8bb9719d",
+            "gridsterCoords": {
+               "w": 12,
+               "x": 1,
+               "h": 14,
+               "y": 1
+            },
+            "type": "View",
+            "title": "Dell EMC Servers with Issues",
+            "config": {
+               "refreshInterval": 300,
+               "resource": {
+                  "resourceId": "resource:id:0_::_",
+                  "traversalSpecId": "",
+                  "resourceName": "Dell EMC Servers",
+                  "resourceKindId": "002009ContainerEnvironment",
+                  "id": "Ext.vcops.chrome.model.Resource-1"
+               },
+               "traversalSpecId": null,
+               "refreshContent": {"refreshContent": true},
+               "isUpdatedView": true,
+               "chartViewItems": [],
+               "selectFirstRow": {"selectFirstRow": true},
+               "selfProvider": {"selfProvider": true},
+               "title": "Dell EMC Servers with Issues",
+               "viewDefinitionId": "e4b8fd54-3f27-430e-b039-d0b2c4a5be03"
+            },
+            "height": 780,
+            "states": [
+               {
+                  "value": "b%3A0",
+                  "key": "perm_isDashboardTime_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_dddaa688-7dc9-422f-a8a6-28fe8bb9719d"
+               },
+               {
+                  "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253ApermTableView_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_dddaa688-7dc9-422f-a8a6-28fe8bb9719d-column-0%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_dddaa688-7dc9-422f-a8a6-28fe8bb9719d-column-Availability%2525257CPing%2525257CStatus1%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_dddaa688-7dc9-422f-a8a6-28fe8bb9719d-column-Hardware%2525257CHealth%2525257CSystem2%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_dddaa688-7dc9-422f-a8a6-28fe8bb9719d-column-Settings%2525257CPower%25252520State3%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_dddaa688-7dc9-422f-a8a6-28fe8bb9719d-column-Summary%2525257COperating%25252520System%2525257CPowered%25252520on%25252520Time4%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_dddaa688-7dc9-422f-a8a6-28fe8bb9719d-column-Summary%2525257CWarranty%2525257CDays%25252520Left5%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_dddaa688-7dc9-422f-a8a6-28fe8bb9719d-column-Summary%2525257CServer%25252520Model6%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_dddaa688-7dc9-422f-a8a6-28fe8bb9719d-column-Summary%2525257CServer%25252520Serial%25252520Number7%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_dddaa688-7dc9-422f-a8a6-28fe8bb9719d-column-Hardware%2525257CChassis%2525257CService%25252520Tag8%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_dddaa688-7dc9-422f-a8a6-28fe8bb9719d-column-Hardware%2525257CCPU%2525257CCPU%25252520Model9%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_dddaa688-7dc9-422f-a8a6-28fe8bb9719d-column-Hardware%2525257CCPU%2525257CCPU%25252520Count10%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_dddaa688-7dc9-422f-a8a6-28fe8bb9719d-column-Hardware%2525257CCPU%2525257CCore%25252520Count11%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_dddaa688-7dc9-422f-a8a6-28fe8bb9719d-column-Hardware%2525257CCPU%2525257CThreading%25252520Enabled12%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_dddaa688-7dc9-422f-a8a6-28fe8bb9719d-column-Hardware%2525257CChassis%2525257CMax%25252520DIMM%25252520Slots13%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_dddaa688-7dc9-422f-a8a6-28fe8bb9719d-column-Hardware%2525257CChassis%2525257CPopulated%25252520DIMM%25252520Slots14%25255Ehidden%25253Db%2525253A0",
+                  "key": "permTableView_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_dddaa688-7dc9-422f-a8a6-28fe8bb9719d"
+               }
+            ]
+         },
+         {
+            "collapsed": false,
+            "id": "ebb6a13a-9c73-4132-a520-6d013ca90de2",
+            "gridsterCoords": {
+               "w": 6,
+               "x": 1,
+               "h": 8,
+               "y": 15
+            },
+            "type": "AlertList",
+            "title": "Alerts for selected Server",
+            "config": {
+               "alertImpact": [],
+               "alertAction": [],
+               "refreshInterval": 300,
+               "resource": [],
+               "refreshContent": {"refreshContent": true},
+               "relationshipMode": {"relationshipMode": [
+                  -1,
+                  0
+               ]},
+               "criticalityLevel": [],
+               "title": "Alerts for selected Server",
+               "type": [],
+               "mode": "all",
+               "filterMode": "tagPicker",
+               "tagFilter": null,
+               "alertDefinitions": [],
+               "depth": 1,
+               "customFilter": {
+                  "filter": [],
+                  "excludedResources": null,
+                  "includedResources": null
+               },
+               "selfProvider": {"selfProvider": false},
+               "state": [],
+               "status": []
+            },
+            "height": 437,
+            "states": [
+               {
+                  "value": "s%3ADEFINITION",
+                  "key": "permViewMode_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_ebb6a13a-9c73-4132-a520-6d013ca90de2"
+               },
+               {
+                  "value": "s%3A%7B%22dateRange%22%3A%22last30Days%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D",
+                  "key": "permDateFilter_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_ebb6a13a-9c73-4132-a520-6d013ca90de2"
+               },
+               {
+                  "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah16%255Eo%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%255Eo%25253Aid%25253Ds%2525253Ah3%255Eo%25253Aid%25253Ds%2525253Ah4%255Eo%25253Aid%25253Ds%2525253Ah5%255Eo%25253Aid%25253Ds%2525253Ah6%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah11%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah12%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah14%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah15%25255Ehidden%25253Db%2525253A1%5EstoreState%3Do%253Asorters%253Da%25253Ao%2525253Aroot%2525253Ds%252525253Adata%2525255Eproperty%2525253Ds%252525253AalertLevel%2525255Edirection%2525253Ds%252525253ADESC%2525255Eid%2525253Ds%252525253AalertLevel",
+                  "key": "permAlertGrid_perm_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_ebb6a13a-9c73-4132-a520-6d013ca90de2"
+               },
+               {
+                  "value": "b%3A1",
+                  "key": "perm_toolbarVisible_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_ebb6a13a-9c73-4132-a520-6d013ca90de2"
+               }
+            ]
+         },
+         {
+            "collapsed": false,
+            "id": "5bee8708-bd74-442f-8aec-8a755ff6d601",
+            "gridsterCoords": {
+               "w": 3,
+               "x": 10,
+               "h": 8,
+               "y": 15
+            },
+            "type": "ResourceRelationshipAdvanced",
+            "title": "Advanced Object Relationship for selected Server",
+            "config": {
+               "filterMode": "tagPicker",
+               "tagFilter": null,
+               "resourceId": null,
+               "depth": "2,2",
+               "refreshInterval": 300,
+               "traversalSpecId": "",
+               "refreshContent": {"refreshContent": true},
+               "customFilter": {
+                  "filter": [],
+                  "excludedResources": null,
+                  "includedResources": null
+               },
+               "resourceName": null,
+               "selectFirstRow": {"selectFirstRow": true},
+               "selfProvider": {"selfProvider": false},
+               "title": "Advanced Object Relationship for selected Server"
+            },
+            "height": 438
+         },
+         {
+            "collapsed": false,
+            "id": "feb46304-9a38-4dc5-9bb7-f7d0a27f382b",
+            "gridsterCoords": {
+               "w": 3,
+               "x": 7,
+               "h": 8,
+               "y": 15
+            },
+            "type": "View",
+            "title": "Dell EMC Servers Down",
+            "config": {
+               "refreshInterval": 300,
+               "resource": {
+                  "resourceId": "resource:id:0_::_",
+                  "traversalSpecId": "",
+                  "resourceName": "Dell EMC Servers",
+                  "resourceKindId": "002009ContainerEnvironment",
+                  "id": "Ext.vcops.chrome.model.Resource-124"
+               },
+               "traversalSpecId": null,
+               "refreshContent": {"refreshContent": true},
+               "isUpdatedView": true,
+               "chartViewItems": [],
+               "selectFirstRow": {"selectFirstRow": false},
+               "selfProvider": {"selfProvider": true},
+               "title": "Dell EMC Servers Down",
+               "viewDefinitionId": "b21c0864-2458-4e45-b927-97a2d9ad7797"
+            },
+            "height": 437,
+            "states": [{
+               "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253ApermTableView_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_feb46304-9a38-4dc5-9bb7-f7d0a27f382b-column-0%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A241%25255Eindex%25253Dn%2525253A0%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_feb46304-9a38-4dc5-9bb7-f7d0a27f382b-column-Availability%2525257CPing%2525257CStatus1%25255Ehidden%25253Db%2525253A0%25255Eindex%25253Dn%2525253A1%255Eo%25253Aid%25253Ds%2525253ApermTableView_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_feb46304-9a38-4dc5-9bb7-f7d0a27f382b-column-Availability%2525257CPing%2525257CPacketLoss2%25255Ehidden%25253Db%2525253A0%25255Eindex%25253Dn%2525253A2",
+               "key": "permTableView_widget_2d6cc04e-7d32-4726-b32c-4e88764bf674_feb46304-9a38-4dc5-9bb7-f7d0a27f382b"
+            }]
+         }
+      ],
+      "states": [],
+      "homeTab": false,
+      "rank": 0,
+      "disabled": false,
+      "id": "2d6cc04e-7d32-4726-b32c-4e88764bf674",
+      "adapterName": "iSDK_HardwarevCommunity",
+      "locked": false,
+      "dashboardNavigations": {},
+      "widgetInteractions": [
+         {
+            "widgetIdProvider": "dddaa688-7dc9-422f-a8a6-28fe8bb9719d",
+            "type": "resourceId",
+            "widgetIdReceiver": "ebb6a13a-9c73-4132-a520-6d013ca90de2"
+         },
+         {
+            "widgetIdProvider": "dddaa688-7dc9-422f-a8a6-28fe8bb9719d",
+            "type": "resourceId",
+            "widgetIdReceiver": "5bee8708-bd74-442f-8aec-8a755ff6d601"
+         },
+         {
+            "widgetIdProvider": "feb46304-9a38-4dc5-9bb7-f7d0a27f382b",
+            "type": "resourceId",
+            "widgetIdReceiver": "5bee8708-bd74-442f-8aec-8a755ff6d601"
+         }
+      ],
+      "namePath": "Hardware vCommunity",
+      "lastUpdateUserId": "243d8e63-642a-43a4-b493-f5b816c8b745",
+      "columnCount": 1,
+      "userId": "243d8e63-642a-43a4-b493-f5b816c8b745",
+      "name": "Hardware vCommunity/Dell EMC Server Workbench",
+      "gridsterMaxColumns": 12,
+      "lastUpdateTime": 1770185528312
+   }],
+   "uuid": "0aee892d-5554-4ab3-96b1-a572d9df0f89"
+}

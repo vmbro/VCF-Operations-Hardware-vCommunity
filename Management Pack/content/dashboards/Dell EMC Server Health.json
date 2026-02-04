@@ -1,0 +1,525 @@
+{
+   "entries": {"resourceKind": [
+      {
+         "resourceKindKey": "PhysicalServer",
+         "internalId": "resourceKind:id:1_::_",
+         "adapterKindKey": "HardwarevCommunity"
+      },
+      {
+         "resourceKindKey": "vSphere World",
+         "internalId": "resourceKind:id:0_::_",
+         "adapterKindKey": "VMWARE"
+      }
+   ]},
+   "dashboards": [{
+      "shared": false,
+      "temporary": false,
+      "hidden": false,
+      "creationTime": 1770143016558,
+      "autoswitchEnabled": false,
+      "importAttempts": 0,
+      "columnProportion": "1-1",
+      "importComplete": true,
+      "description": "",
+      "widgets": [
+         {
+            "collapsed": false,
+            "id": "fb31d696-1b8f-4f1d-9109-dbd4e13b4046",
+            "gridsterCoords": {
+               "w": 12,
+               "x": 1,
+               "h": 13,
+               "y": 1
+            },
+            "type": "Heatmap",
+            "title": "Dell EMC Servers (hover for details)",
+            "config": {
+               "mode": "all",
+               "configs": [{
+                  "colorBy": {
+                     "metricKey": "badge|health",
+                     "value": "Badge|Health (%)"
+                  },
+                  "focusOnGroups": true,
+                  "color": {
+                     "thresholds": {
+                        "values": [
+                           0,
+                           50,
+                           100
+                        ],
+                        "colors": [
+                           "#CE4C3C",
+                           "#CE4C3C",
+                           "#EDD073",
+                           "#83AF50"
+                        ]
+                     },
+                     "minValue": 0,
+                     "maxValue": 100
+                  },
+                  "sizeBy": {
+                     "metricKey": "System Attributes|total_alert_count",
+                     "value": "VMware Aria Operations Generated|Total Alert Count"
+                  },
+                  "relationalGrouping": false,
+                  "groupBy": {
+                     "originalText": "vSphere World",
+                     "resourceKind": "vSphere World",
+                     "adapterKind": "VMWARE",
+                     "typeId": "resourceKind:id:0_::_",
+                     "id": "004null002006VMWAREvSphere World",
+                     "text": "vSphere World",
+                     "type": "resourceKind",
+                     "parentText": "vCenter",
+                     "parentId": "VMWARE"
+                  },
+                  "attributeKind": {"value": ""},
+                  "thenBy": null,
+                  "mode": {"mode": false},
+                  "resourceKind": "resourceKind:id:1_::_",
+                  "filterMode": "tagPicker",
+                  "solidColoring": true,
+                  "name": "Health"
+               }],
+               "depth": 10,
+               "refreshInterval": 300,
+               "resource": [],
+               "refreshContent": {"refreshContent": true},
+               "relationshipMode": {"relationshipMode": [
+                  1,
+                  -1,
+                  0
+               ]},
+               "selfProvider": {"selfProvider": true},
+               "title": "Dell EMC Servers (hover for details)",
+               "value": 0
+            },
+            "height": 723,
+            "states": [
+               {
+                  "value": "o%3A",
+                  "key": "perm_HeatMap_widget_9b12ba34-3f3a-4460-a416-05c5aa5c4631_fb31d696-1b8f-4f1d-9109-dbd4e13b4046"
+               },
+               {
+                  "value": "b%3A0",
+                  "key": "permBtn_showTextBtn_perm_HeatMap_widget_9b12ba34-3f3a-4460-a416-05c5aa5c4631_fb31d696-1b8f-4f1d-9109-dbd4e13b4046"
+               },
+               {
+                  "value": "b%3A0",
+                  "key": "perm_toolbarVisible_widget_9b12ba34-3f3a-4460-a416-05c5aa5c4631_fb31d696-1b8f-4f1d-9109-dbd4e13b4046"
+               }
+            ]
+         },
+         {
+            "collapsed": false,
+            "id": "087860d2-e7fa-4e6e-bee6-e1e3d9ccdf98",
+            "gridsterCoords": {
+               "w": 6,
+               "x": 1,
+               "h": 8,
+               "y": 14
+            },
+            "type": "AlertList",
+            "title": "Alert List for selected Server",
+            "config": {
+               "alertImpact": [],
+               "alertAction": [],
+               "refreshInterval": 300,
+               "resource": [],
+               "refreshContent": {"refreshContent": true},
+               "relationshipMode": {"relationshipMode": [
+                  -1,
+                  0
+               ]},
+               "criticalityLevel": [],
+               "title": "Alert List for selected Server",
+               "type": [],
+               "mode": "all",
+               "filterMode": "tagPicker",
+               "tagFilter": null,
+               "alertDefinitions": [],
+               "depth": 1,
+               "customFilter": {
+                  "filter": [],
+                  "excludedResources": null,
+                  "includedResources": null
+               },
+               "selfProvider": {"selfProvider": false},
+               "state": [],
+               "status": [0]
+            },
+            "height": 438,
+            "states": [
+               {
+                  "value": "s%3ADEFINITION",
+                  "key": "permViewMode_widget_9b12ba34-3f3a-4460-a416-05c5aa5c4631_087860d2-e7fa-4e6e-bee6-e1e3d9ccdf98"
+               },
+               {
+                  "value": "s%3A%7B%22dateRange%22%3A%22last30Days%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D",
+                  "key": "permDateFilter_widget_9b12ba34-3f3a-4460-a416-05c5aa5c4631_087860d2-e7fa-4e6e-bee6-e1e3d9ccdf98"
+               },
+               {
+                  "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah16%255Eo%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%255Eo%25253Aid%25253Ds%2525253Ah3%255Eo%25253Aid%25253Ds%2525253Ah4%255Eo%25253Aid%25253Ds%2525253Ah5%255Eo%25253Aid%25253Ds%2525253Ah6%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah11%255Eo%25253Aid%25253Ds%2525253Ah12%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah14%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah15%25255Ehidden%25253Db%2525253A0%5EstoreState%3Do%253Asorters%253Da%25253Ao%2525253Aroot%2525253Ds%252525253Adata%2525255Eproperty%2525253Ds%252525253AalertLevel%2525255Edirection%2525253Ds%252525253ADESC%2525255Eid%2525253Ds%252525253AalertLevel",
+                  "key": "permAlertGrid_perm_widget_9b12ba34-3f3a-4460-a416-05c5aa5c4631_087860d2-e7fa-4e6e-bee6-e1e3d9ccdf98"
+               }
+            ]
+         },
+         {
+            "collapsed": false,
+            "id": "927c9bff-c4f3-4a52-b82d-639465d9d3ec",
+            "gridsterCoords": {
+               "w": 3,
+               "x": 7,
+               "h": 8,
+               "y": 14
+            },
+            "type": "PropertyList",
+            "title": "Properties for selected Server",
+            "config": {
+               "visualTheme": 0,
+               "depth": 1,
+               "refreshInterval": 300,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceMetrics": [],
+                  "resourceKindMetrics": [
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": null,
+                        "metricName": "Summary|Hostname",
+                        "metricKey": "Summary|Hostname",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Physical Server",
+                        "isStringMetric": true,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "label": "Hostname",
+                        "orangeBound": null,
+                        "unit": "",
+                        "redBound": null,
+                        "id": "extModel2412-3",
+                        "colorMethod": 1
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": null,
+                        "metricName": "Summary|Manufacturer",
+                        "metricKey": "Summary|Manufacturer",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Physical Server",
+                        "isStringMetric": true,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "label": "Manufacturer",
+                        "orangeBound": null,
+                        "unit": "",
+                        "redBound": null,
+                        "id": "extModel2412-4",
+                        "colorMethod": 1
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": null,
+                        "metricName": "Summary|Server Model",
+                        "metricKey": "Summary|Server Model",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Physical Server",
+                        "isStringMetric": true,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "label": "Server Model",
+                        "orangeBound": null,
+                        "unit": "",
+                        "redBound": null,
+                        "id": "extModel2412-6",
+                        "colorMethod": 1
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": null,
+                        "metricName": "Summary|Server Serial Number",
+                        "metricKey": "Summary|Server Serial Number",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Physical Server",
+                        "isStringMetric": true,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "label": "Serial Number",
+                        "orangeBound": null,
+                        "unit": "",
+                        "redBound": null,
+                        "id": "extModel2412-7",
+                        "colorMethod": 1
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": null,
+                        "metricName": "Summary|Part Number",
+                        "metricKey": "Summary|Part Number",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Physical Server",
+                        "isStringMetric": true,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "label": "Part Number",
+                        "orangeBound": null,
+                        "unit": "",
+                        "redBound": null,
+                        "id": "extModel2412-5",
+                        "colorMethod": 1
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": null,
+                        "metricName": "Summary|Config File",
+                        "metricKey": "Summary|Config File",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Physical Server",
+                        "isStringMetric": true,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "label": "Config File",
+                        "orangeBound": null,
+                        "unit": "",
+                        "redBound": null,
+                        "id": "extModel2412-2",
+                        "colorMethod": 1
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": null,
+                        "metricName": "Summary|Boot Last State",
+                        "metricKey": "Summary|Boot Last State",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Physical Server",
+                        "isStringMetric": true,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "label": "Boot Last State",
+                        "orangeBound": null,
+                        "unit": "",
+                        "redBound": null,
+                        "id": "extModel2412-1",
+                        "colorMethod": 1
+                     }
+                  ],
+                  "subMode": "resourceKindAll"
+               },
+               "resource": [],
+               "refreshContent": {"refreshContent": true},
+               "relationshipMode": {"relationshipMode": 0},
+               "customFilter": {
+                  "filter": [],
+                  "excludedResources": null,
+                  "includedResources": null
+               },
+               "selfProvider": {"selfProvider": false},
+               "title": "Properties for selected Server",
+               "showMetricFullName": {"metricFullName": true},
+               "resInteractionMode": null
+            },
+            "height": 437,
+            "states": [{
+               "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%25255Ewidth%25253Dn%2525253A225%255Eo%25253Aid%25253Ds%2525253Ah3%25255Ewidth%25253Dn%2525253A70.3125%255Eo%25253Aid%25253Ds%2525253Ah4",
+               "key": "permMetricListDataGrid_metricGrid_widget_9b12ba34-3f3a-4460-a416-05c5aa5c4631_927c9bff-c4f3-4a52-b82d-639465d9d3ec"
+            }]
+         },
+         {
+            "collapsed": false,
+            "id": "53ae4571-17ea-436d-89c4-7dbc4a2b88df",
+            "gridsterCoords": {
+               "w": 3,
+               "x": 10,
+               "h": 8,
+               "y": 14
+            },
+            "type": "PropertyList",
+            "title": "Properties for selected Server",
+            "config": {
+               "visualTheme": 0,
+               "depth": 1,
+               "refreshInterval": 300,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceMetrics": [],
+                  "resourceKindMetrics": [
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": null,
+                        "metricName": "Summary|Network|IPv4 Address",
+                        "metricKey": "Summary|Network|IPv4 Address",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Physical Server",
+                        "isStringMetric": true,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "label": "IP Address",
+                        "orangeBound": null,
+                        "unit": "",
+                        "redBound": null,
+                        "id": "extModel3155-6",
+                        "colorMethod": 1
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": null,
+                        "metricName": "Summary|Network|Gateway",
+                        "metricKey": "Summary|Network|Gateway",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Physical Server",
+                        "isStringMetric": true,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "label": "Gateway",
+                        "orangeBound": null,
+                        "unit": "",
+                        "redBound": null,
+                        "id": "extModel3155-5",
+                        "colorMethod": 1
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": null,
+                        "metricName": "Summary|Network|Netmask",
+                        "metricKey": "Summary|Network|Netmask",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Physical Server",
+                        "isStringMetric": true,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "label": "Netmask",
+                        "orangeBound": null,
+                        "unit": "",
+                        "redBound": null,
+                        "id": "extModel3155-8",
+                        "colorMethod": 1
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": null,
+                        "metricName": "Summary|Network|DNS 1",
+                        "metricKey": "Summary|Network|DNS 1",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Physical Server",
+                        "isStringMetric": true,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "label": "DNS 1",
+                        "orangeBound": null,
+                        "unit": "",
+                        "redBound": null,
+                        "id": "extModel3155-2",
+                        "colorMethod": 1
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": null,
+                        "metricName": "Summary|Network|DNS 2",
+                        "metricKey": "Summary|Network|DNS 2",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Physical Server",
+                        "isStringMetric": true,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "label": "DNS 2",
+                        "orangeBound": null,
+                        "unit": "",
+                        "redBound": null,
+                        "id": "extModel3155-3",
+                        "colorMethod": 1
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": null,
+                        "metricName": "Summary|Operating System|Name",
+                        "metricKey": "Summary|Operating System|Name",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Physical Server",
+                        "isStringMetric": true,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "label": "OS",
+                        "orangeBound": null,
+                        "unit": "",
+                        "redBound": null,
+                        "id": "extModel3155-9",
+                        "colorMethod": 1
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": null,
+                        "metricName": "Summary|Operating System|Version",
+                        "metricKey": "Summary|Operating System|Version",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Physical Server",
+                        "isStringMetric": true,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "label": "OS Version",
+                        "orangeBound": null,
+                        "unit": "",
+                        "redBound": null,
+                        "id": "extModel3155-10",
+                        "colorMethod": 1
+                     },
+                     {
+                        "yellowBound": null,
+                        "metricUnitId": null,
+                        "metricName": "Summary|Redfish|Redfish Version",
+                        "metricKey": "Summary|Redfish|Redfish Version",
+                        "handleOldColoring": false,
+                        "resourceKindName": "Physical Server",
+                        "isStringMetric": true,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "label": "Redfish Version",
+                        "orangeBound": null,
+                        "unit": "",
+                        "redBound": null,
+                        "id": "extModel3155-14",
+                        "colorMethod": 1
+                     }
+                  ],
+                  "subMode": "resourceKindAll"
+               },
+               "resource": [],
+               "refreshContent": {"refreshContent": true},
+               "relationshipMode": {"relationshipMode": 0},
+               "customFilter": {
+                  "filter": [],
+                  "excludedResources": null,
+                  "includedResources": null
+               },
+               "selfProvider": {"selfProvider": false},
+               "title": "Properties for selected Server",
+               "showMetricFullName": {"metricFullName": true},
+               "resInteractionMode": null
+            },
+            "height": 437,
+            "states": [{
+               "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%25255Ewidth%25253Dn%2525253A251%255Eo%25253Aid%25253Ds%2525253Ah3%25255Ewidth%25253Dn%2525253A156%255Eo%25253Aid%25253Ds%2525253Ah4",
+               "key": "permMetricListDataGrid_metricGrid_widget_9b12ba34-3f3a-4460-a416-05c5aa5c4631_53ae4571-17ea-436d-89c4-7dbc4a2b88df"
+            }]
+         }
+      ],
+      "states": [],
+      "homeTab": false,
+      "rank": 0,
+      "disabled": false,
+      "id": "9b12ba34-3f3a-4460-a416-05c5aa5c4631",
+      "adapterName": "iSDK_HardwarevCommunity",
+      "locked": false,
+      "dashboardNavigations": {},
+      "widgetInteractions": [
+         {
+            "widgetIdProvider": "fb31d696-1b8f-4f1d-9109-dbd4e13b4046",
+            "type": "resourceId",
+            "widgetIdReceiver": "087860d2-e7fa-4e6e-bee6-e1e3d9ccdf98"
+         },
+         {
+            "widgetIdProvider": "fb31d696-1b8f-4f1d-9109-dbd4e13b4046",
+            "type": "resourceId",
+            "widgetIdReceiver": "927c9bff-c4f3-4a52-b82d-639465d9d3ec"
+         },
+         {
+            "widgetIdProvider": "fb31d696-1b8f-4f1d-9109-dbd4e13b4046",
+            "type": "resourceId",
+            "widgetIdReceiver": "53ae4571-17ea-436d-89c4-7dbc4a2b88df"
+         }
+      ],
+      "namePath": "Hardware vCommunity",
+      "lastUpdateUserId": "243d8e63-642a-43a4-b493-f5b816c8b745",
+      "columnCount": 1,
+      "userId": "243d8e63-642a-43a4-b493-f5b816c8b745",
+      "name": "Hardware vCommunity/Dell EMC Server Health",
+      "gridsterMaxColumns": 12,
+      "lastUpdateTime": 1770143016540
+   }],
+   "uuid": "3c07fe94-c71c-418e-ba6e-c6098cc4a34e"
+}

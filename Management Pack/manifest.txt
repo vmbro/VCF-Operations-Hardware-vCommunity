@@ -2,7 +2,7 @@
     "display_name": "DISPLAY_NAME",
     "name": "iSDK_HardwarevCommunity",
     "description": "DESCRIPTION",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "vcops_minimum_version": "8.18.0",
     "disk_space_required": 500,
     "run_scripts_on_all_nodes": "true",
